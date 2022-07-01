@@ -19,6 +19,7 @@ s = for
 Output: rof
 ```
 __Your Task__
+
 You only need to complete the function **reverseWord()** that takes s as parameter and returns the reversed string.
 
 __Expected Time Complexity:__ O(|S|)

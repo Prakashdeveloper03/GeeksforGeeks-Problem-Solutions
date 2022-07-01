@@ -19,6 +19,7 @@ Output: 0
 Explanation: S is not a palindrome
 ```
 __Your Task__
+
 You don't need to read input or print anything. Complete the function **isPlaindrome()** which accepts string S and returns an integervalue 1 or 0.
 
 __Expected Time Complexity:__ O(Length of S)

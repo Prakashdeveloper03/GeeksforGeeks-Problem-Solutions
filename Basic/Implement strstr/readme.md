@@ -26,6 +26,7 @@ in GeeksForGeeks from index 5 (0 based
 indexing).
 ```
 __Your Task__
+
 You don't have to take any input. Just complete the **strstr()** function which takes two strings **str, target** as an input parameter. The function returns `-1` if no match if found else it returns an integer denoting the first occurrence of the x in the string `s`.
 
 __Expected Time Complexity:__ O(|s|*|x|)
