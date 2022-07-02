@@ -49,6 +49,7 @@ Union(3,4)
 Output: 0
 ```
 __Your Task__
+
 You have to complete the function **union_()** which merges the node1 and node2. You will also have to complete the function **isConnected()** which will return whether the two nodes are connected.
 
 **Note:** Both function will contain two arrays **par[]** and **ranks1[]** along with two nodes. Initially **par[i] = i** and **rank1[i] = 1**
