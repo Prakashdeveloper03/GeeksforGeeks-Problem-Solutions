@@ -1,18 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    void helloWorld()
-    {
-        cout << "Hello World" << endl;
-    }
+  void helloWorld() { cout << "Hello World" << endl; }
 };
 
-int main()
-{
-    Solution obj;
-    obj.helloWorld();
-    return 0;
+int main() {
+  Solution obj;
+  obj.helloWorld();
+  return 0;
 }

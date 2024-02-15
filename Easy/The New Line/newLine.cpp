@@ -1,16 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printNewLine()
-{
+void printNewLine() { cout << "Geeks" << endl << "for" << endl << "Geeks"; }
 
-    cout << "Geeks" << endl
-         << "for" << endl
-         << "Geeks";
-}
-
-int main()
-{
-    printNewLine();
-    return 0;
+int main() {
+  printNewLine();
+  return 0;
 }
