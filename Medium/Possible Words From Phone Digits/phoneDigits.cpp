@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-private:
+ private:
   void solve(int a[], int i, int n, vector<string> val, string op,
              vector<string> &v) {
     if (i == n) {
@@ -16,7 +16,7 @@ private:
     }
   }
 
-public:
+ public:
   vector<string> possibleWords(int a[], int N) {
     vector<string> val = {"",    "",    "abc",  "def", "ghi",
                           "jkl", "mno", "pqrs", "tuv", "wxyz"};
@@ -40,8 +40,7 @@ int main() {
     }
     Solution obj;
     vector<string> res = obj.possibleWords(a, N);
-    for (string i : res)
-      cout << i << " ";
+    for (string i : res) cout << i << " ";
     cout << endl;
   }
   return 0;

@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   string findLargest(int N, int S) {
     string res = "";
-    if (S == 0 && N > 1)
-      return "-1";
+    if (S == 0 && N > 1) return "-1";
 
     while (S) {
       if (S > 9) {
@@ -18,8 +17,7 @@ public:
         N--;
       }
     }
-    if (N < 0)
-      return "-1";
+    if (N < 0) return "-1";
     while (N) {
       res += '0';
       N--;

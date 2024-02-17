@@ -10,7 +10,7 @@ struct Node {
 void insert();
 
 class Solution {
-public:
+ public:
   void display(Node *head) {
     Node *temp = head;
     while (temp != NULL) {

@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   void merge(int input[], int start, int mid, int end) {
     int i = start;
     int j = mid + 1;
@@ -50,12 +50,10 @@ int main() {
     int n;
     cin >> n;
     int arr[n + 1];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     Solution obj;
     obj.mergeSort(arr, 0, n - 1);
-    for (int i = 0; i < n; i++)
-      cout << arr[i] << " ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " ";
     cout << endl;
   }
   return 0;

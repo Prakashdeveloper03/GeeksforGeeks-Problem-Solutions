@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   long long int prime_Sum(int n) {
     long long int sum = 0;
     int a[n + 1];
@@ -17,8 +17,7 @@ public:
     }
 
     for (int g = 2; g <= n; g++) {
-      if (a[g] == 0)
-        sum = sum + g;
+      if (a[g] == 0) sum = sum + g;
     }
 
     return sum;

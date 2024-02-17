@@ -3,7 +3,7 @@ using namespace std;
 class complex {
   int x, y;
 
-public:
+ public:
   complex() {}
 
   complex(int real, int imag) {
@@ -22,7 +22,6 @@ public:
 };
 
 int main() {
-
   int t;
   cin >> t;
   while (t--) {

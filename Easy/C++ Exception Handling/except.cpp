@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int maxValue(int A, int B) {
     try {
       if (B == 0) {

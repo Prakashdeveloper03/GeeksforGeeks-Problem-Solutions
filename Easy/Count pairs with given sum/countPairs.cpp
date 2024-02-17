@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int getPairsCount(int arr[], int n, int k) {
     unordered_map<int, int> mp;
     int ans = 0;

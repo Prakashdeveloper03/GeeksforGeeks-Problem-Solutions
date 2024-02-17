@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int negaBit(int F, int S) { return F ^ S; }
 };
 

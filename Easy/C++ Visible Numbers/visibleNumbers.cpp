@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   vector<int> compute(int arr[], int n) {
     unordered_map<int, int> mp;
     vector<int> v;
@@ -26,16 +26,13 @@ int main() {
     int n;
     cin >> n;
     int arr[n];
-    for (int j = 0; j < n; j++)
-      cin >> arr[j];
+    for (int j = 0; j < n; j++) cin >> arr[j];
 
     vector<int> v;
     Solution ob;
     v = ob.compute(arr, n);
-    if (v.size() == 0)
-      v.push_back(-1);
-    for (int i : v)
-      cout << i << " ";
+    if (v.size() == 0) v.push_back(-1);
+    for (int i : v) cout << i << " ";
 
     cout << endl;
   }

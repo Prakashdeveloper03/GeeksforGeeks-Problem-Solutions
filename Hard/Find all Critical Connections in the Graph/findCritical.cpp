@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void dfs(int node, int parent, vector<int> &low, vector<int> &tin,
            vector<int> &vis, vector<int> adj[], int &timer,
            vector<vector<int>> &bridges) {

@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool check(int mid, int n) {
     int counter = 0, x = mid;
     while (x) {

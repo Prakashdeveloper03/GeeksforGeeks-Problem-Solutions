@@ -11,7 +11,7 @@ struct Node {
 };
 
 class Solution {
-public:
+ public:
   int getCount(struct Node *head) {
     Node *temp = head;
     int length = 0;

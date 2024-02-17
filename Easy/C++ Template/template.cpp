@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-template <class T> class minElement {
+template <class T>
+class minElement {
   T a;
 
-public:
+ public:
   minElement(T n) { a = n; }
   void check(T b) {
     if (a < b)

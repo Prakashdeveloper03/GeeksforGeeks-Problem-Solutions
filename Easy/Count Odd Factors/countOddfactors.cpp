@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int count(int N) {
     int res = abs(sqrt(N));
     return res;

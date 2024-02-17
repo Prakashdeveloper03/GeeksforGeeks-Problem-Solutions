@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<long long> factorial(vector<long long> a, int n) {
     long long d = *max_element(a.begin(), a.end());
     vector<long long> ans, dp(d + 1, 1);

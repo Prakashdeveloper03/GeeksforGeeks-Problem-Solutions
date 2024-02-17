@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int isPowerOfAnother(long long x, long long y) {
     for (int i = 0; i < 64; i++) {
       if (pow(x, i) == y) {

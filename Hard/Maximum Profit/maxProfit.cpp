@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int maxProfit(int K, int N, int A[]) {
     vector<vector<int>> dp(K + 1, vector<int>(N, 0));
     for (int i = 1; i <= K; i++) {
@@ -23,8 +23,7 @@ int main() {
     cin >> K;
     cin >> N;
     int A[N];
-    for (int i = 0; i < N; i++)
-      cin >> A[i];
+    for (int i = 0; i < N; i++) cin >> A[i];
 
     Solution ob;
     cout << ob.maxProfit(K, N, A) << endl;

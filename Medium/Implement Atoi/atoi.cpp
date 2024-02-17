@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int atoi(string str) {
     int n = str.length() - 1;
     int res = 0;

@@ -2,10 +2,10 @@
 using namespace std;
 
 class student {
-private:
+ private:
   string first_name, last_name;
 
-public:
+ public:
   void set_name(string f, string l) {
     first_name = f;
     last_name = l;

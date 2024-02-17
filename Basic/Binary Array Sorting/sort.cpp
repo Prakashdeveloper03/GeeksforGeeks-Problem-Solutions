@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void binSort(int A[], int N) {
     int ct = 0;
     for (int i = 0; i < N; i++) {
@@ -20,12 +20,10 @@ int main() {
     int N;
     cin >> N;
     int A[N];
-    for (int i = 0; i < N; i++)
-      cin >> A[i];
+    for (int i = 0; i < N; i++) cin >> A[i];
     Solution obj;
     obj.binSort(A, N);
-    for (int x : A)
-      cout << x << " ";
+    for (int x : A) cout << x << " ";
     cout << endl;
   }
   return 0;

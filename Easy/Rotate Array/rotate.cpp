@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void arrreverse(int i, int j, int arr[]) {
     while (i < j) {
       swap(arr[i], arr[j]);

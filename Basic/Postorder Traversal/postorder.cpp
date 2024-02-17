@@ -16,12 +16,10 @@ Node *newNode(int val) {
 }
 
 Node *buildTree(string str) {
-  if (str.length() == 0 || str[0] == 'N')
-    return NULL;
+  if (str.length() == 0 || str[0] == 'N') return NULL;
   vector<string> ip;
   istringstream iss(str);
-  for (string str; iss >> str;)
-    ip.push_back(str);
+  for (string str; iss >> str;) ip.push_back(str);
   Node *root = newNode(stoi(ip[0]));
   queue<Node *> queue;
   queue.push(root);
@@ -35,8 +33,7 @@ Node *buildTree(string str) {
       queue.push(currNode->left);
     }
     i++;
-    if (i >= ip.size())
-      break;
+    if (i >= ip.size()) break;
     currVal = ip[i];
     if (currVal != "N") {
       currNode->right = newNode(stoi(currVal));
@@ -59,8 +56,7 @@ int main() {
     struct Node *root = buildTree(inp);
 
     vector<int> res = postOrder(root);
-    for (int i = 0; i < res.size(); i++)
-      cout << res[i] << " ";
+    for (int i = 0; i < res.size(); i++) cout << res[i] << " ";
     cout << endl;
   }
   return 0;

@@ -16,8 +16,7 @@ bool search(Node *root, int x);
 
 Node *insert(Node *tree, int val) {
   Node *temp = NULL;
-  if (tree == NULL)
-    return new Node(val);
+  if (tree == NULL) return new Node(val);
 
   if (val < tree->data) {
     tree->left = insert(tree->left, val);

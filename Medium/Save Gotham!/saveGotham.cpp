@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int save_gotham(int arr[], int n) {
     stack<long long> st;
     vector<long long> ans(n);
@@ -33,8 +33,7 @@ int main() {
     int n, i;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     Solution obj;
     cout << obj.save_gotham(arr, n) << endl;
   }

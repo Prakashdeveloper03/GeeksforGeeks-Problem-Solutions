@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   vector<int> subarraySum(int arr[], int n, long long s) {
     int l = 0, r = 0;
     vector<int> res;
@@ -16,7 +16,6 @@ public:
         r++;
         cur_sum = cur_sum + arr[r];
       } else {
-
         cur_sum = cur_sum - arr[l];
         l++;
       }
@@ -42,8 +41,7 @@ int main() {
     vector<int> res;
     res = ob.subarraySum(arr, n, s);
 
-    for (int i = 0; i < res.size(); i++)
-      cout << res[i] << " ";
+    for (int i = 0; i < res.size(); i++) cout << res[i] << " ";
     cout << endl;
   }
   return 0;

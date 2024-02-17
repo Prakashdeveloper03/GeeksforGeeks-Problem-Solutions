@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   void helloWorld() { cout << "Hello World" << endl; }
 };
 

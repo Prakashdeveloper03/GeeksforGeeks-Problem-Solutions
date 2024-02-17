@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<long long> printFibb(int n) {
     vector<long long> ans(n);
     ans[0] = 1;

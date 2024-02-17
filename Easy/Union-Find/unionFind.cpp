@@ -2,10 +2,9 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int find(int a, int par[]) {
-    if (a == par[a])
-      return a;
+    if (a == par[a]) return a;
     return par[a] = find(par[a], par);
   }
 

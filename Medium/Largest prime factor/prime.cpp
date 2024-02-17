@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   bool isPrime(int n) {
     if (n <= 1) {
       return false;

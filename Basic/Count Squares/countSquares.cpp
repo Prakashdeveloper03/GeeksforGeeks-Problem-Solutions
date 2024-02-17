@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int countSquares(int N) { return sqrt(N - 1); }
 };
 

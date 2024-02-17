@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Node {
-public:
+ public:
   int data;
   Node *left;
   Node *right;
@@ -18,12 +18,10 @@ Node *newNode(int key) {
 }
 
 Node *buildTree(string str) {
-  if (str.length() == 0 || str[0] == 'N')
-    return NULL;
+  if (str.length() == 0 || str[0] == 'N') return NULL;
   vector<string> ip;
   istringstream iss(str);
-  for (string str; iss >> str;)
-    ip.push_back(str);
+  for (string str; iss >> str;) ip.push_back(str);
   Node *root = newNode(stoi(ip[0]));
   queue<Node *> queue;
   queue.push(root);
@@ -37,8 +35,7 @@ Node *buildTree(string str) {
       queue.push(currNode->left);
     }
     i++;
-    if (i >= ip.size())
-      break;
+    if (i >= ip.size()) break;
     currVal = ip[i];
     if (currVal != "N") {
       currNode->right = newNode(stoi(currVal));
@@ -51,8 +48,7 @@ Node *buildTree(string str) {
 
 void printList(Node *head) {
   while (head) {
-    if (head->left)
-      cout << "-1 ";
+    if (head->left) cout << "-1 ";
     cout << head->data << " ";
     head = head->right;
   }
@@ -60,11 +56,10 @@ void printList(Node *head) {
 }
 
 class Solution {
-public:
+ public:
   Node *prev = nullptr, *start = nullptr;
   Node *flattenBST(Node *root) {
-    if (root == nullptr)
-      return nullptr;
+    if (root == nullptr) return nullptr;
 
     flattenBST(root->left);
 

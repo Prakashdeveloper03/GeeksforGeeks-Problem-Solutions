@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int minSwaps(vector<int> &nums) {
     vector<pair<int, int>> V;
     for (int i = 0; i < nums.size(); i++) {

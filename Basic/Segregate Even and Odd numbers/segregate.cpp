@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void segregateEvenOdd(int arr[], int n) {
     vector<int> odd, even;
     for (int i = 0; i < n; i++) {
@@ -15,11 +15,9 @@ public:
     sort(even.begin(), even.end());
 
     int i = 0;
-    for (; i < even.size(); ++i)
-      arr[i] = even[i];
+    for (; i < even.size(); ++i) arr[i] = even[i];
 
-    for (int j = 0; j < odd.size(); j++, i++)
-      arr[i] = odd[j];
+    for (int j = 0; j < odd.size(); j++, i++) arr[i] = odd[j];
   }
 };
 

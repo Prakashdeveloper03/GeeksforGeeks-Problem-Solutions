@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   long long int nthFibonacci(long long int n) {
     int first = -1, second = 1;
     long long int next;

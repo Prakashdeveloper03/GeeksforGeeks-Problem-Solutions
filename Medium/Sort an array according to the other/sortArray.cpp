@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> sortA1ByA2(vector<int> A1, int n, vector<int> A2, int m) {
     vector<int> ans;
     map<int, int> map1;
@@ -23,7 +23,6 @@ public:
       int val = x.second;
       int key = x.first;
       while (val--) {
-
         ans.push_back(key);
       }
     }

@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> nextPermutation(int N, vector<int> arr) {
     for (int i = N - 1; i > 0; i--) {
       if (arr[i] > arr[i - 1]) {
@@ -29,12 +29,10 @@ int main() {
     int n;
     cin >> n;
     vector<int> arr(n);
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     Solution obj;
     vector<int> ans = obj.nextPermutation(n, arr);
-    for (int u : ans)
-      cout << u << " ";
+    for (int u : ans) cout << u << " ";
     cout << endl;
   }
   return 0;

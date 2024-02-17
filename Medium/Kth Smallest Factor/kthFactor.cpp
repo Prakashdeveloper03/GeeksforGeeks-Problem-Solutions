@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int kThSmallestFactor(int N, int K) {
     set<int> s;
     for (int i = 1; i <= sqrt(N); i++) {

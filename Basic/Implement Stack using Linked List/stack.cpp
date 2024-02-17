@@ -10,10 +10,10 @@ struct StackNode {
 };
 
 class MyStack {
-private:
+ private:
   StackNode *top;
 
-public:
+ public:
   void push(int);
   int pop();
   MyStack() { top = NULL; }
@@ -48,8 +48,7 @@ void MyStack ::push(int x) {
 }
 
 int MyStack ::pop() {
-  if (!top)
-    return -1;
+  if (!top) return -1;
   const int x{top->data};
   const StackNode *const n{top};
   top = top->next;

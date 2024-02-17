@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   string fractionToDecimal(int numerator, int denominator) {
     int whole = numerator / denominator;
     int decimal = numerator % denominator;
     string ans = to_string(whole);
-    if (decimal == 0)
-      return ans;
+    if (decimal == 0) return ans;
     unordered_map<int, int> mp;
     mp.clear();
     ans += ".";

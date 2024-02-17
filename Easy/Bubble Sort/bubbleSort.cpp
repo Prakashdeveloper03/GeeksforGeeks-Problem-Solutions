@@ -6,7 +6,7 @@ void swap(int *xp, int *yp) {
 }
 
 class Solution {
-public:
+ public:
   void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
       for (int j = 0; j < n - 1 - i; j++) {
@@ -20,8 +20,7 @@ public:
 
 void printArray(int arr[], int size) {
   int i;
-  for (i = 0; i < size; i++)
-    printf("%d ", arr[i]);
+  for (i = 0; i < size; i++) printf("%d ", arr[i]);
   printf("\n");
 }
 
@@ -30,8 +29,7 @@ int main() {
   scanf("%d", &T);
   while (T--) {
     scanf("%d", &n);
-    for (i = 0; i < n; i++)
-      scanf("%d", &arr[i]);
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
     Solution ob;
     ob.bubbleSort(arr, n);
     printArray(arr, n);

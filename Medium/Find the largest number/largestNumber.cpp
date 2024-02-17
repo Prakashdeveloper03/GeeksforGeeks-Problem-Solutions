@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   bool isDcreasing(int n) {
     string s = to_string(n);
     for (int i = 1; i < s.length(); i++) {

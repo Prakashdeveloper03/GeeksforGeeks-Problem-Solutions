@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   long long findNth(long long N) {
     long long ans = 0, x = 1;
     while (N) {

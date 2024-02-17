@@ -2,11 +2,10 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool findTriplets(int arr[], int n) {
     vector<int> v(n);
-    for (int i = 0; i < n; i++)
-      v[i] = arr[i];
+    for (int i = 0; i < n; i++) v[i] = arr[i];
 
     sort(v.begin(), v.end());
     for (int i = 0; i < n; i++) {
@@ -31,8 +30,7 @@ int main() {
     int n;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     Solution obj;
     if (obj.findTriplets(arr, n))
       cout << 1 << endl;

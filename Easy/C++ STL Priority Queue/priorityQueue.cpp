@@ -17,31 +17,31 @@ int main() {
       int c;
       cin >> c;
       switch (c) {
-      case 1: {
-        int x;
-        cin >> x;
-        addElement(A, x);
-        print(A);
-        break;
-      }
-      case 2: {
-        remove_Element(A);
-        break;
-      }
-      case 3: {
-        cout << getElement_at_top(A) << endl;
-        break;
-      }
-      case 4: {
-        cout << getSize(A) << endl;
-        break;
-      }
-      case 5: {
-        print(A);
-        break;
-      }
-      default:
-        return 0;
+        case 1: {
+          int x;
+          cin >> x;
+          addElement(A, x);
+          print(A);
+          break;
+        }
+        case 2: {
+          remove_Element(A);
+          break;
+        }
+        case 3: {
+          cout << getElement_at_top(A) << endl;
+          break;
+        }
+        case 4: {
+          cout << getSize(A) << endl;
+          break;
+        }
+        case 5: {
+          print(A);
+          break;
+        }
+        default:
+          return 0;
       }
     }
   }

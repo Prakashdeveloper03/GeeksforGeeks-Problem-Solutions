@@ -21,8 +21,7 @@ void findAll() {
       }
       num /= 10;
     }
-    if (flag)
-      mp[i] = 1;
+    if (flag) mp[i] = 1;
   }
 }
 
@@ -34,8 +33,7 @@ int main() {
     int n, flag = 0;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     sort(arr, arr + n);
     for (int i = 0; i < n; ++i) {
       if (mp[arr[i]]) {
@@ -43,8 +41,7 @@ int main() {
         flag = 1;
       }
     }
-    if (!flag)
-      cout << "-1";
+    if (!flag) cout << "-1";
     cout << endl;
   }
   return 0;

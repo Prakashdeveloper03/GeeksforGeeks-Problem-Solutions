@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int maxRepeating(int *arr, int n, int k) {
     unordered_map<int, int> mp;
     for (int i = 0; i < n; i++) {

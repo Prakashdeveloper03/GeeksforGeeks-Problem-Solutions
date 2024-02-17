@@ -18,7 +18,6 @@ int main() {
   cin >> T;
 
   while (T--) {
-
     cin >> n >> k;
     Node *head = NULL, *tail = NULL;
     int x;
@@ -30,8 +29,7 @@ int main() {
       tail->next = new Node(x);
       tail = tail->next;
     }
-    if (k == 1 && n >= 1)
-      tail->next = head;
+    if (k == 1 && n >= 1) tail->next = head;
 
     printf("%d\n", isCircular(head));
   }
@@ -44,8 +42,7 @@ bool isCircular(Node *head) {
   while (fast != NULL && fast->next != NULL) {
     fast = fast->next->next;
     slow = slow->next;
-    if (fast == slow)
-      return true;
+    if (fast == slow) return true;
   }
   return false;
 }

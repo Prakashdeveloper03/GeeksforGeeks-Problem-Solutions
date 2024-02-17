@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   bool isprime(int n) {
     if (n <= 1) {
       return false;
@@ -33,8 +33,7 @@ int main() {
     cin >> M >> N;
     Solution ob;
     vector<int> ans = ob.primeRange(M, N);
-    for (auto u : ans)
-      cout << u << " ";
+    for (auto u : ans) cout << u << " ";
     cout << "\n";
   }
 }

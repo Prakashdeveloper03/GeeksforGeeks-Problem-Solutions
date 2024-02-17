@@ -1,18 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   // Heapify function to maintain heap property.
   void heapify(int arr[], int n, int i) {
     int left = 2 * i + 1;
     int right = 2 * i + 2;
     int lar = i;
 
-    if (left < n and arr[left] > arr[lar])
-      lar = left;
+    if (left < n and arr[left] > arr[lar]) lar = left;
 
-    if (right < n and arr[right] > arr[lar])
-      lar = right;
+    if (right < n and arr[right] > arr[lar]) lar = right;
 
     if (lar != i) {
       swap(arr[lar], arr[i]);
@@ -39,8 +37,7 @@ public:
 
 void printArray(int arr[], int size) {
   int i;
-  for (i = 0; i < size; i++)
-    printf("%d ", arr[i]);
+  for (i = 0; i < size; i++) printf("%d ", arr[i]);
   printf("\n");
 }
 
@@ -49,8 +46,7 @@ int main() {
   scanf("%d", &T);
   while (T--) {
     scanf("%d", &n);
-    for (i = 0; i < n; i++)
-      scanf("%d", &arr[i]);
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
     Solution ob;
     ob.heapSort(arr, n);
     printArray(arr, n);

@@ -2,14 +2,12 @@
 using namespace std;
 
 void swap(int *A, int *B) {
-
   int temp = *A;
   *A = *B;
   *B = temp;
 }
 
 void swap(int &A, int &B) {
-
   int temp = A;
   A = B;
   B = temp;

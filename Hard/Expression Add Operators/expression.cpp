@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   vector<string> ans;
   string s;
   int target;
@@ -13,16 +13,14 @@ public:
   }
   void gen_exp(int ind, long prev, long val, string ex) {
     if (ind == s.size()) {
-      if (val == target)
-        ans.push_back(ex);
+      if (val == target) ans.push_back(ex);
       return;
     }
     int n = s.size();
     string ns = "";
     int curr = 0;
     for (int i = ind; i < n; i++) {
-      if (i > ind and s[ind] == '0')
-        return;
+      if (i > ind and s[ind] == '0') return;
       ns += s[i];
       curr = curr * 10 + s[i] - '0';
       if (ind == 0) {
@@ -47,8 +45,7 @@ int main() {
     Solution obj;
     vector<string> ans = obj.addOperators(S, target);
     sort(ans.begin(), ans.end());
-    for (auto &it : ans)
-      cout << it << ' ';
+    for (auto &it : ans) cout << it << ' ';
     cout << endl;
   }
   return 0;

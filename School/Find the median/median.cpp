@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
-public:
+ public:
+ public:
   int find_median(vector<int> v) {
     sort(v.begin(), v.end());
     int n = v.size();
@@ -21,8 +21,7 @@ int main() {
     int n;
     cin >> n;
     vector<int> v(n);
-    for (int i = 0; i < n; i++)
-      cin >> v[i];
+    for (int i = 0; i < n; i++) cin >> v[i];
     Solution ob;
     int ans = ob.find_median(v);
     cout << ans << "\n";

@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int searchInSorted(int arr[], int n, int k) {
     int low = 0;
     int high = n - 1;
@@ -28,8 +28,7 @@ int main() {
     int n;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     int key;
     cin >> key;
     Solution obj;

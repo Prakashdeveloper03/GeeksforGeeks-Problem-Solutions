@@ -12,7 +12,7 @@ struct Node {
 };
 
 class Solution {
-public:
+ public:
   void solve(Node *root, vector<int> &v) {
     if (root != NULL) {
       solve(root->left, v);
@@ -28,12 +28,10 @@ public:
 };
 
 Node *buildTree(string str) {
-  if (str.length() == 0 || str[0] == 'N')
-    return NULL;
+  if (str.length() == 0 || str[0] == 'N') return NULL;
   vector<string> ip;
   istringstream iss(str);
-  for (string str; iss >> str;)
-    ip.push_back(str);
+  for (string str; iss >> str;) ip.push_back(str);
   Node *root = new Node(stoi(ip[0]));
   queue<Node *> queue;
   queue.push(root);
@@ -47,8 +45,7 @@ Node *buildTree(string str) {
       queue.push(currNode->left);
     }
     i++;
-    if (i >= ip.size())
-      break;
+    if (i >= ip.size()) break;
     currVal = ip[i];
     if (currVal != "N") {
       currNode->right = new Node(stoi(currVal));
@@ -71,8 +68,7 @@ int main() {
     Node *root = buildTree(s);
     Solution ob;
     vector<int> res = ob.inOrder(root);
-    for (int i = 0; i < res.size(); i++)
-      cout << res[i] << " ";
+    for (int i = 0; i < res.size(); i++) cout << res[i] << " ";
     cout << endl;
   }
   return 0;

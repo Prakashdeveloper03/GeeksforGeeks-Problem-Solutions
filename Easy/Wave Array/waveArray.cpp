@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void convertToWave(int n, vector<int> &arr) {
     if (n % 2 == 0) {
-      for (int i = 0; i < n; i = i + 2)
-        swap(arr[i], arr[i + 1]);
+      for (int i = 0; i < n; i = i + 2) swap(arr[i], arr[i + 1]);
     }
 
     else {
@@ -22,12 +21,10 @@ int main() {
   while (t--) {
     cin >> n;
     vector<int> a(n);
-    for (int i = 0; i < n; i++)
-      cin >> a[i];
+    for (int i = 0; i < n; i++) cin >> a[i];
     Solution ob;
     ob.convertToWave(n, a);
-    for (int i = 0; i < n; i++)
-      cout << a[i] << " ";
+    for (int i = 0; i < n; i++) cout << a[i] << " ";
     cout << endl;
   }
 }

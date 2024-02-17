@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<set<int>> setOperations(set<int> A, set<int> B) {
     vector<set<int>> res;
 

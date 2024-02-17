@@ -2,13 +2,12 @@
 #include <stdio.h>
 void printArray(int arr[], int size) {
   int i;
-  for (i = 0; i < size; i++)
-    printf("%d ", arr[i]);
+  for (i = 0; i < size; i++) printf("%d ", arr[i]);
   printf("\n");
 }
 
 class Solution {
-public:
+ public:
   void insert(int arr[], int i) {
     int j = i - 1;
     int key = arr[i];
@@ -31,8 +30,7 @@ int main() {
   scanf("%d", &T);
   while (T--) {
     scanf("%d", &n);
-    for (i = 0; i < n; i++)
-      scanf("%d", &arr[i]);
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
     Solution ob;
     ob.insertionSort(arr, n);
     printArray(arr, n);

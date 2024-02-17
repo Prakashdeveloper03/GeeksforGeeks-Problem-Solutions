@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void rotate(vector<vector<int>> &matrix) {
     int n = matrix.size();
     for (int i = 0; i < n / 2; i++) {
@@ -33,8 +33,7 @@ int main() {
     Solution ob;
     ob.rotate(matrix);
     for (int i = 0; i < n; i++) {
-      for (int j = 0; j < n; j++)
-        cout << matrix[i][j] << " ";
+      for (int j = 0; j < n; j++) cout << matrix[i][j] << " ";
       cout << "\n";
     }
   }

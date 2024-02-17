@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   string removeKdigits(string S, int K) {
     if (K >= S.size()) {
       return "0";

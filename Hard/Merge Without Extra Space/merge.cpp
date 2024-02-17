@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   void merge(int arr1[], int arr2[], int n, int m) {
     int i = n - 1, j = 0;
     while (i >= 0 && j < m && arr1[i] > arr2[j]) {

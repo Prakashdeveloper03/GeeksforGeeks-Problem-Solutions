@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int search(int arr[], int N, int X) {
     for (int i = 0; i < N; i++) {
-      if (arr[i] == X)
-        return i;
+      if (arr[i] == X) return i;
     }
     return -1;
   }

@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int MissingNumber(int array[], int n) {
     int total = (n * (n + 1)) / 2;
     for (int i = 0; i < n - 1; i++) {
@@ -19,8 +19,7 @@ int main() {
     long long int n;
     cin >> n;
     int arr[n - 1];
-    for (int i = 0; i < n - 1; ++i)
-      cin >> arr[i];
+    for (int i = 0; i < n - 1; ++i) cin >> arr[i];
     Solution obj;
     cout << obj.MissingNumber(arr, n) << endl;
   }

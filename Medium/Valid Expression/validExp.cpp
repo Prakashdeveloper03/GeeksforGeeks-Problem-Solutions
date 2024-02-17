@@ -29,7 +29,6 @@ bool valid(string s) {
     } else
       return false;
   }
-  if (st.size() == 0)
-    return true;
+  if (st.size() == 0) return true;
   return false;
 }

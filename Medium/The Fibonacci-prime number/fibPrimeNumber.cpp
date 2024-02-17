@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int fibonacciPrime(string N) {
     vector<string> arr{"2",
                        "3",
@@ -21,8 +21,7 @@ public:
                        "62268716376935476241"};
 
     for (int i = 0; i < arr.size(); i++)
-      if (N == arr[i])
-        return 1;
+      if (N == arr[i]) return 1;
 
     return 0;
   }

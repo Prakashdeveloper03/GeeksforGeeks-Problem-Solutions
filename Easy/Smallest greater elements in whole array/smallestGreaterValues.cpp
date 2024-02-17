@@ -25,8 +25,7 @@ int main() {
 
 int *greaterElement(int arr[], int n) {
   set<int> s;
-  for (int i = 0; i < n; i++)
-    s.insert(arr[i]);
+  for (int i = 0; i < n; i++) s.insert(arr[i]);
   for (int i = 0; i < n; i++) {
     auto indx = s.upper_bound(arr[i]);
     if (indx != s.end())

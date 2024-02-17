@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int trailingZeroes(int n) {
     int ans = 0;
     while (n != 0) {

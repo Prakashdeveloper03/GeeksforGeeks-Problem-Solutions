@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   long long int floorSqrt(long long int x) {
     long long int low = 1, high = x, mid, ans;
     while (low <= high) {

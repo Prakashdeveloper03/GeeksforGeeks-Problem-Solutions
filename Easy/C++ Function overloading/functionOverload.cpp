@@ -14,23 +14,23 @@ int main() {
     cin >> q;
 
     switch (q) {
-    case 1:
-      int edge;
-      cin >> edge;
-      volume(edge);
-      break;
+      case 1:
+        int edge;
+        cin >> edge;
+        volume(edge);
+        break;
 
-    case 2:
-      int radius, heigh;
-      cin >> radius >> heigh;
-      volume(radius, heigh);
-      break;
+      case 2:
+        int radius, heigh;
+        cin >> radius >> heigh;
+        volume(radius, heigh);
+        break;
 
-    case 3:
-      int length, width, height;
-      cin >> length >> width >> height;
-      volume(length, width, height);
-      break;
+      case 3:
+        int length, width, height;
+        cin >> length >> width >> height;
+        volume(length, width, height);
+        break;
     }
   }
   return 0;

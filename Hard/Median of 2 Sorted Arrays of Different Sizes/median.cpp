@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   double MedianOfArrays(vector<int> &array1, vector<int> &array2) {
     vector<int> v;
     for (int i = 0; i < array1.size(); i++) {

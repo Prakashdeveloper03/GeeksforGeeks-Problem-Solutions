@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
     set<int> s(a, a + n);
     int count = 0;
@@ -21,10 +21,8 @@ int main() {
     int n, m;
     cin >> n >> m;
     int a[100], b[100];
-    for (int i = 0; i < n; i++)
-      cin >> a[i];
-    for (int j = 0; j < m; j++)
-      cin >> b[j];
+    for (int i = 0; i < n; i++) cin >> a[i];
+    for (int j = 0; j < m; j++) cin >> b[j];
     Solution obj;
     cout << obj.NumberofElementsInIntersection(a, b, n, m) << endl;
   }

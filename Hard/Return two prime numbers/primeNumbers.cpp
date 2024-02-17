@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   bool isPrime(int k) {
     for (int i = 2; i <= sqrt(k); i++) {
       if (k % i == 0) {
@@ -12,7 +12,7 @@ private:
     return true;
   }
 
-public:
+ public:
   vector<int> primeDivision(int N) {
     vector<int> v;
     for (int i = 2; i <= N; i++) {

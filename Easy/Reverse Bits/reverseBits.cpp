@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   long long reversedBits(long long X) {
     string str = bitset<32>(X).to_string();
     reverse(str.begin(), str.end());

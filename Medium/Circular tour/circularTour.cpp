@@ -7,15 +7,14 @@ struct petrolPump {
 };
 
 class Solution {
-public:
+ public:
   int tour(petrolPump p[], int n) {
     int totalPetrol = 0, totalDistance = 0;
     for (int i = 0; i < n; i++) {
       totalPetrol += p[i].petrol;
       totalDistance += p[i].distance;
     }
-    if (totalDistance > totalPetrol)
-      return -1;
+    if (totalDistance > totalPetrol) return -1;
     int candidate = 0, currPetrol = 0, currDist = 0;
     for (int i = 0; i < n; i++) {
       currPetrol += p[i].petrol;

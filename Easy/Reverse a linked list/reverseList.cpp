@@ -1,6 +1,7 @@
-#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include <iostream>
 using namespace std;
 struct Node {
   int data;
@@ -12,7 +13,7 @@ struct Node {
 };
 
 class Solution {
-public:
+ public:
   struct Node *reverseList(struct Node *head) {
     if (head == NULL || head->next == NULL) {
       return head;

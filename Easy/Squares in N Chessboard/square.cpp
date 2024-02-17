@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   long long squaresInChessBoard(long long N) {
     long long sum = 0;
     for (long long i = 1; i <= N; i++) {

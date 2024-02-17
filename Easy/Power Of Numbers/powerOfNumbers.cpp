@@ -2,15 +2,13 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   long long power(int N, int R) {
     long long const m = 1000000007;
-    if (R == 0)
-      return 1;
+    if (R == 0) return 1;
     long long res = power(N, R / 2);
     res = ((res % m) * (res % m)) % m;
-    if (R % 2 == 0)
-      return res;
+    if (R % 2 == 0) return res;
     return (res * (N)) % m;
   }
 };

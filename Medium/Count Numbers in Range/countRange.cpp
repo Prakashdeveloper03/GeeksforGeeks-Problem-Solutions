@@ -1,14 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int prime(int num) {
     int i, limit;
     limit = sqrt(num);
-    if (num == 1)
-      return 0;
-    if (num == 2)
-      return 1;
+    if (num == 1) return 0;
+    if (num == 2) return 1;
     for (i = 2; i <= limit; i++) {
       if (num % i == 0) {
         return 0;

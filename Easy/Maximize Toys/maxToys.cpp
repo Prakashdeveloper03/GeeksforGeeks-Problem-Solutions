@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   int toyCount(int N, int K, vector<int> arr) {
     sort(arr.begin(), arr.end());
     long long su = 0, nt = 0;
@@ -22,8 +22,7 @@ int main() {
     int N, K;
     cin >> N >> K;
     vector<int> arr(N);
-    for (int i = 0; i < N; i++)
-      cin >> arr[i];
+    for (int i = 0; i < N; i++) cin >> arr[i];
 
     Solution ob;
     cout << ob.toyCount(N, K, arr) << endl;

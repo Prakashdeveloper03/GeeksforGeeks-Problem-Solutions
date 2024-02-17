@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   void booleanMatrix(vector<vector<int>> &matrix) {
     vector<vector<int>> v;
     v = matrix;

@@ -21,8 +21,7 @@ void append(struct Node **head_ref, int new_data) {
     *head_ref = new_node;
     return;
   }
-  while (last->next != NULL)
-    last = last->next;
+  while (last->next != NULL) last = last->next;
   last->next = new_node;
   return;
 }
@@ -53,8 +52,7 @@ int main() {
 }
 
 void deleteAlt(struct Node *head) {
-  if (head == NULL || head->next == NULL)
-    return;
+  if (head == NULL || head->next == NULL) return;
   Node *curr = head;
   Node *temp = NULL;
   while (curr != NULL && curr->next != NULL) {

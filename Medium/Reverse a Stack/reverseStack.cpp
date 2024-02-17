@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   stack<int> Reverse(stack<int> st) {
     stack<int> s1;
     reverse(st, s1);
@@ -9,8 +9,7 @@ public:
   }
 
   void reverse(stack<int> st, stack<int> &s1) {
-    if (st.empty())
-      return;
+    if (st.empty()) return;
     int a = st.top();
     st.pop();
     s1.push(a);

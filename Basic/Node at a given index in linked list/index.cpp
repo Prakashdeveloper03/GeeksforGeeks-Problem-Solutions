@@ -1,6 +1,7 @@
-#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include <iostream>
 using namespace std;
 struct node {
   int data;
@@ -13,18 +14,15 @@ struct node {
 };
 
 struct node *push(struct node *head, int d) {
-
   struct node *new_node = (struct node *)malloc(sizeof(struct node));
 
   new_node->data = d;
   new_node->next = NULL;
 
-  if (head == NULL)
-    return new_node;
+  if (head == NULL) return new_node;
 
   struct node *h = head;
-  while (head->next != NULL)
-    head = head->next;
+  while (head->next != NULL) head = head->next;
   head->next = new_node;
 
   return h;

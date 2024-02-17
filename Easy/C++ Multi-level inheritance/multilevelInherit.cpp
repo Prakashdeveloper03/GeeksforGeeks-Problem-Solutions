@@ -1,20 +1,19 @@
 #include <iostream>
 using namespace std;
 class student {
-protected:
+ protected:
   int roll_number;
 
-public:
+ public:
   void set_number(int a) { roll_number = a; }
 
   void display_number() { cout << roll_number << endl; }
 };
 
 class test : public student {
-public:
+ public:
   float totalmarks = 0, avgmarks = 0;
   void set_marks(float temp[]) {
-
     for (int i = 0; i < 5; i++) {
       totalmarks += temp[i];
     }
@@ -23,7 +22,7 @@ public:
 };
 
 class result : public test {
-public:
+ public:
   void display() {
     cout << roll_number << " " << totalmarks << " " << avgmarks;
     cout << endl;
@@ -41,8 +40,7 @@ int main() {
     float temp[5];
     int i;
 
-    for (i = 0; i < 5; i++)
-      cin >> temp[i];
+    for (i = 0; i < 5; i++) cin >> temp[i];
 
     student1.set_marks(temp);
     student1.display();

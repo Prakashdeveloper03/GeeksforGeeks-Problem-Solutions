@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   long long sequence(int n) {
     long long result;
     int count = 1, mod = 1000000007;

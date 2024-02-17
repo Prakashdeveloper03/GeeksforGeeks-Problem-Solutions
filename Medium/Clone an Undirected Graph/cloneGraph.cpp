@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 #include <sstream>
 using namespace std;
 
@@ -89,13 +90,12 @@ bool compare(Node *prev, Node *new_node, unordered_set<Node *> &prev_vis,
 }
 
 class Solution {
-private:
+ private:
   unordered_map<Node *, Node *> mp;
 
-public:
+ public:
   Node *cloneGraph(Node *node) {
-    if (!node)
-      return nullptr;
+    if (!node) return nullptr;
     if (mp.find(node) == mp.end()) {
       mp[node] = new Node(node->val, {});
       for (Node *neighbor : node->neighbors) {
@@ -116,16 +116,14 @@ int main() {
     vector<Node *> v(N);
     std::string buffer;
     std::getline(std::cin, buffer);
-    for (int i = 0; i < N; i++)
-      v[i] = new Node(i);
+    for (int i = 0; i < N; i++) v[i] = new Node(i);
     for (int i = 0; i < N; i++) {
       std::vector<Node *> vec;
       std::string buffer;
       int data;
       std::getline(std::cin, buffer);
       std::istringstream iss(buffer);
-      while (iss >> data)
-        vec.push_back(v[data]);
+      while (iss >> data) vec.push_back(v[data]);
       v[i]->neighbors = vec;
     }
     Solution ob;

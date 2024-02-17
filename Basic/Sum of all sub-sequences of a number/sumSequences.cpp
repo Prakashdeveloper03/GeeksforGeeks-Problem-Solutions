@@ -2,11 +2,10 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int subsequenceSum(string s) {
     int sum = 0, n = s.size();
-    for (int i = 0; i < n; i++)
-      sum += s[i] - '0';
+    for (int i = 0; i < n; i++) sum += s[i] - '0';
     return sum * (1 << n - 1);
   }
 };

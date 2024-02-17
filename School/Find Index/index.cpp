@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   vector<int> findIndex(int a[], int n, int key) {
     vector<int> result;
     int first = -1, last = -1;
@@ -27,14 +27,12 @@ int main() {
     vector<int> res;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-      cin >> arr[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
     int key;
     cin >> key;
     Solution ob;
     res = ob.findIndex(arr, n, key);
-    for (int i = 0; i < res.size(); i++)
-      cout << res[i] << " ";
+    for (int i = 0; i < res.size(); i++) cout << res[i] << " ";
     cout << "\n";
   }
   return 0;

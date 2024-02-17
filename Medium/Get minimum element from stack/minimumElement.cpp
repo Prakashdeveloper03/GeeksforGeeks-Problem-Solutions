@@ -5,16 +5,14 @@ class Solution {
   int minEle;
   stack<pair<int, int>> s;
 
-public:
+ public:
   int getMin() {
-    if (s.empty())
-      return -1;
+    if (s.empty()) return -1;
     return s.top().second;
   }
 
   int pop() {
-    if (s.size() == 0)
-      return -1;
+    if (s.size() == 0) return -1;
     int val = s.top().first;
     s.pop();
     return val;

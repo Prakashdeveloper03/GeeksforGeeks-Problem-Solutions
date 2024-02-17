@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   bool isMaxHeap(int arr[], int n) {
     return (n == 1 or (arr[n / 2 - 1] >= arr[n - 1] and isMaxHeap(arr, n - 1)));
   }

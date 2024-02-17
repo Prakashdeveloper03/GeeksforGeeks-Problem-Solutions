@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-private:
+ private:
   const int m = 1e9 + 7;
 
-public:
+ public:
   bool isprime(int n) {
     if (n <= 1) {
       return false;

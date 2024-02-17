@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+ public:
   bool balancedNumber(string N) {
     int sum1 = 0, sum2 = 0;
     for (int i = 0; i < N.length() / 2; i++) {
